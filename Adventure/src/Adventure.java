@@ -8,7 +8,7 @@ public class Adventure {
 		Random rand = new Random();
 
 		String[] enemies = { "skeleton", "zombie", "ghoul", "goblin" };
-		int maxEnemyHealth = 75;
+		int maxEnemyHealth = 100;
 		int enemyAttackDamage = 25;
 
 		int health = 100;
@@ -25,12 +25,12 @@ public class Adventure {
 
 			int enemyHealth = rand.nextInt(maxEnemyHealth);
 			String enemy = enemies[rand.nextInt(enemies.length)];
-			System.out.println("\t# A " + enemy + " appears! #\n");
+			System.out.println("\t# A " + enemy + " has appeared! #\n");
 
 			while (enemyHealth > 0) {
-				System.out.println("\tYour HP: " + health);
-				System.out.println("\t" + enemy + "'s HP: " + enemyHealth);
-				System.out.println("\n\tWhat would you like to do?");
+				System.out.println("\tYour HP is: " + health);
+				System.out.println("\tThe " + enemy + "'s HP is: " + enemyHealth);
+				System.out.println("\n\tWhat would you like to do next?");
 				System.out.println("\t1. Attack");
 				System.out.println("\t2. Drink health potion");
 				System.out.println("\t3. Run away");
