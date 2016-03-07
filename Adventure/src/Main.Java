@@ -13,7 +13,7 @@ public class Adventure {
 
 		int health = 100;
 		int attackDamage = 50;
-		int numHealthPotions = 3;
+		int numHealthPotions = 5;
 		int healthPotionHealAmount = 30;
 		int healthPotionDropChance = 50;
 
@@ -32,8 +32,8 @@ public class Adventure {
 				System.out.println("\tThe " + enemy + "'s HP is: " + enemyHealth);
 				System.out.println("\n\tWhat would you like to do next?");
 				System.out.println("\t1. Attack");
-				System.out.println("\t2. Drink health potion");
-				System.out.println("\t3. Run away");
+				System.out.println("\t2. Drink");
+				System.out.println("\t3. Run");
 
 				String input = in.nextLine();
 				if (input.equals("1")) {
@@ -47,7 +47,7 @@ public class Adventure {
 					System.out.println("\t> You take " + damageTaken + " damage from the enemy.");
 
 					if (health < 1) {
-						System.out.println("\t> You have sustained too much damage and collapse.");
+						System.out.println("\t> You have taken1 too much damage and collapse.");
 						break;
 					}
 				} else if (input.equals("2")) {
